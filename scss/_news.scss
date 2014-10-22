@@ -1,2 +1,33 @@
 /* News */
 
+.secondary-wrapper.news {
+	margin-top: 15px;
+}
+
+ul.news-list {
+	list-style: none;
+	margin: 10px 0 0;
+	padding: 0;
+	position: relative;
+	li {
+		margin: 0 0 20px 60px;
+	}
+	i {
+		left: 30px;
+		font-size: 20px;
+		position: absolute;		
+	}
+	.date {
+		font-size: 14px;
+	}
+	.title {
+		font-weight: 900;
+		color: $black;
+	}
+	a.title {
+		color: $blue;
+	}
+	.link {
+		font-size: 14px;
+	}
+}

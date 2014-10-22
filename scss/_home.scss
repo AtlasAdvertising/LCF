@@ -9,15 +9,24 @@
 	z-index: 0;
 	.caption {
 		position: absolute;
-		bottom: 40%;
+		top: 30%;
 		background: rgba(255,255,255,0.85);
 		padding: 30px 50px;
 		font-family: 'Bitter', serif;
-		font-size: 28px;
+		font-size: 22px;
 		font-weight: 900;
 		text-align: center;
 		@include breakpoint(small) {
+			font-size: 22px;
 			text-align: left;
+			top: 8%;
+		}
+		@include breakpoint(medium) {
+			font-size: 28px;
+			top: 45%;
+		}
+		@media (min-width: 1500px) {
+			top: 36%;
 		}
 	}
 	.image img {
@@ -55,8 +64,13 @@
 #teaser-area-wrapper {
 	background: rgba(5,93,185,0.85);
 	color: #fff;
-	margin-top: -221px;
 	position: relative;
+	@include breakpoint(small) {
+	margin-top: -241px;
+	}
+	@include breakpoint(medium) {
+	margin-top: -221px;
+	}
 	.teaser-wrapper {
 		margin: 25px 0;
 		text-align: center;
@@ -226,7 +240,7 @@
 			margin: 0 auto;
 		}
 		.name {
-	    font-family: 'Bitter';
+	    font-family: 'Bitter', serif;
 	    font-size: 18px;
 	    font-weight: 800;
 		}
@@ -268,10 +282,22 @@
 		width: 45px;
 	}
 	.slick-prev {
-		left: 44%;
+		left: 32%;
+		@include breakpoint(small) {
+			left: 40%;
+		}
+		@include breakpoint(medium) {
+			left: 44%;
+		}
 	}
 	.slick-next {
-		right: 44%;
+		right: 32%;
+		@include breakpoint(small) {
+			right: 40%;
+		}
+		@include breakpoint(medium) {
+			right: 44%;
+		}
 	}
 	.slick-prev:before,
 	.slick-next:before {
