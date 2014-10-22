@@ -63,7 +63,7 @@ ul#mobile-social {
 // Search Area
 .search-bar {
 	display: none;
-	background-color: #231F20; 
+	background-color: $black; 
 	height: 40px; 
 	padding: 9px 0; 
 	margin-top: -40px;
@@ -195,6 +195,8 @@ header {
 // Utility Nav 
 #utility-wrapper {
 	background: #fff;
+	position: relative;
+	z-index: 2;
 	#utility-nav {
 		list-style: none;
 		padding: 0;
@@ -210,6 +212,8 @@ header {
 #nav-wrapper {
 	background: rgba(255,255,255,0.85);
 	box-shadow: 0px 3px 7px 0px rgba(0,0,0,0.22);
+	position: relative;
+	z-index: 1;
 	.inner-wrapper {
 		float: right;
 		ul#menuElem {
