@@ -20,6 +20,17 @@
 	padding: 25px 40px 25px 50px;
 }
 
+// No Header Image
+.secondary-header-wrapper.no-image {
+	color: #fff;
+	font-size: 25px;
+	margin: 0px 0 100px;
+	.section-header {
+		background: rgba(5,93,185,0.85);
+		bottom: 25px;
+		padding: 20px 30px 20px 40px;
+	}
+}
 
 // Breadcrumb
 .breadCrumbs,
@@ -52,48 +63,50 @@
 
 
 // My Fav's
-.PageUtility { 
-	z-index: 1;
-	.PageUtility_Wrapper { 
-		width: 320px; 
-		#Utility_MyFavorites, 
-		#Utility_AddPage, 
-		#Utility_Print { 
-			border: 0; 
-			color: #666; 
-			font-size: 12px; 
-			font-family: Helvetica, Arial, sans-serif; 
-			font-weight: normal; 
-			padding: 0 10px 0 0;
-			&:hover {
-				color: $blue;
-				text-decoration: none;
-			} 
-		}
-		#Utility_MyFavorites:after, 
-		#Utility_AddPage:after, 
-		#Utility_Print:after { 
-			content: ': :'; 
-			padding-left: 7px; 
-		}
-		.addthis_button { 
-			font-weight: normal; 
-			&:hover {
-				color: $blue;
-				text-decoration: none;
+.secondary-wrapper {
+	.PageUtility { 
+		z-index: 1;
+		.PageUtility_Wrapper { 
+			width: 320px; 
+			#Utility_MyFavorites, 
+			#Utility_AddPage, 
+			#Utility_Print { 
+				border: 0; 
+				color: #666; 
+				font-size: 12px; 
+				font-family: Helvetica, Arial, sans-serif; 
+				font-weight: normal; 
+				padding: 0 10px 0 0;
+				&:hover {
+					color: $blue;
+					text-decoration: none;
+				} 
+			}
+			#Utility_MyFavorites:after, 
+			#Utility_AddPage:after, 
+			#Utility_Print:after { 
+				content: ': :'; 
+				padding-left: 7px; 
+			}
+			.addthis_button { 
+				font-weight: normal; 
+				&:hover {
+					color: $blue;
+					text-decoration: none;
+				}
+			}
+			#Utility_Share { 
+				padding: 0; 
+			}
+			.ImgBg { 
+				display: none; 
 			}
 		}
-		#Utility_Share { 
-			padding: 0; 
+		.PageUtility_Dropdown { 
+			-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
+			-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
+			box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
 		}
-		.ImgBg { 
-			display: none; 
-		}
-	}
-	.PageUtility_Dropdown { 
-		-webkit-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
-		-moz-box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
-		box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.64); 
 	}
 }
 

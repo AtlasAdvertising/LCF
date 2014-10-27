@@ -1,6 +1,7 @@
 /* News */
 
-.secondary-wrapper.news {
+.secondary-wrapper.news,
+.secondary-content.news {
 	margin-top: 15px;
 }
 
@@ -26,6 +27,9 @@ ul.news-list {
 	}
 	a.title {
 		color: $blue;
+		&:hover {
+			color: $black;
+		}
 	}
 	.link {
 		font-size: 14px;

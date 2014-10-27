@@ -1,5 +1,63 @@
 /* Contact */
 
+#contactContent {
+	margin: 25px 0 50px;
+}
+
+#contactMainContent {
+	color: $grey;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.contactText {
+	margin: 0 0 25px;
+}
+
+.Office {
+	margin: 0 0 50px;
+	strong {
+		color: $black;
+	}
+}
+
+// Contact Form 
+.contact-form-wrapper {
+	color: $grey;
+	font-family: 'Roboto';
+	font-size: 14px;
+	font-weight: 400;
+	margin: 10px 0 45px;	
+	.checkboxes {
+		font-size: 12px;
+		margin: 0 0 10px;
+		label {
+			margin-left: 5px;
+			position: relative;
+			top: -2px;
+		}
+	}
+}
+
+#contactFormWrapper {
+	padding: 20px;
+	background: #f5f5f5;
+}
+
+
+// Headers
+.contactTitle,
+.contact-form-title,
+.OfficeName,
+#staffTitle {
+	color: $black;
+	font-family: 'Bitter', serif;
+	font-weight: 800;
+	font-size: 22px;
+	margin: 0 0 15px;
+}
+
+
 // Form validation styles
 #contactFormWrapper {
 	.valid-input { 
@@ -16,5 +74,65 @@
 		outline: 0; 
 		outline: thin dotted \9; 
 		-webkit-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); -moz-box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); box-shadow: inset 0 1px 1px rgba(238, 42, 36, 0.075), 0 0 8px rgba(238, 42, 36, 0.6); 
+	}
+}
+
+
+// Key Staff 
+#contactMainContent {
+	.staff {
+		color: $dark-grey;
+		margin: 0 0 25px;
+		text-align: center;
+		@include breakpoint(small) {
+			clear: left;
+			overflow: hidden;
+		}
+		.image {
+			@include breakpoint(small) {
+				float: left;
+			}
+			img {
+				margin: 0 auto;
+			}
+		}
+		.name {
+	    font-family: 'Bitter', serif;
+	    font-size: 18px;
+	    font-weight: 800;
+	    @include breakpoint(small) {
+	    	padding-top: 80px;
+	    }
+		}
+		.company,
+		.title {
+	    font-family: 'Roboto';
+	    font-size: 14px;
+	    font-weight: 400;
+		}
+	}
+	.staff-social-media {
+	  list-style: none;
+	  padding: 0;
+	  margin: 15px 0 0;
+	  li {
+	    display: inline-block;
+	    font-size: 25px;
+	    color: $grey;
+	    margin-right: 10px;
+	    &:hover {
+	    	color: $blue;
+	    	cursor: pointer;
+	    }
+	    &:last-child {
+	    	margin: 0;
+	    }
+	    a {
+	    	color: $grey;
+	    	&:hover {
+	    		color: $blue;
+	    	}
+	    }
+		}
 	}
 }

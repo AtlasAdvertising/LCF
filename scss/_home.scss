@@ -184,6 +184,8 @@
 	}
 }
 
+
+// Development Partners 
 .partner {
 	color: $grey;
 	font-family: 'Roboto', sans-serif;
@@ -207,19 +209,8 @@
 			width: 60%;
 		}
 	}
-}
-
-
-// Contact Form 
-.contact-form-wrapper {
-	color: $grey;
-	font-family: 'Roboto';
-	font-size: 14px;
-	font-weight: 400;
-	margin: 10px 0 45px;	
-	.checkboxes {
-		font-size: 12px;
-		margin: 0 0 10px;
+	a.link-text {
+		display: block;
 	}
 }
 
@@ -253,7 +244,7 @@
 	}
 	.staff-social-media {
     list-style: none;
-    padding: 0;
+    padding: 0 0 35px;
     margin: 15px 0 0;
     li {
 	    display: inline-block;
@@ -264,7 +255,7 @@
 	    	color: $blue;
 	    	cursor: pointer;
 	    }
-	    &:last-child {
+	    &.phone {
 	    	margin: 0;
 	    }
 	    a {
