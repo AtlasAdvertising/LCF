@@ -2,9 +2,6 @@
 
 // Header Image
 .secondary-header-wrapper {
-	color: $black;
-	font-family: 'Patua One', serif;
-	font-size: 35px;
 	margin: 0 0 20px;
 	position: relative;
 	img {
@@ -14,10 +11,17 @@
 }
 
 .section-header {
-	position: absolute;
-	bottom: 0;
 	background: rgba(255,255,255,0.8);
-	padding: 25px 40px 25px 50px;
+	bottom: 0;
+	color: $black;
+	font-family: 'Patua One', serif;
+	font-size: 25px;
+	position: absolute;
+	padding: 10px 30px 10px 15px;
+	@include breakpoint(small) {
+		font-size: 35px;
+		padding: 25px 40px 25px 50px;
+	}
 }
 
 // No Header Image
@@ -244,10 +248,13 @@
 	.widget-title,
 	.twitter-wrapper h2,
 	.SidebarTitle {
+		border-top: 1px solid $grey;
+		color: #2B2B2D;
 		font-size: 20px;
 		font-family: 'Bitter', serif;
 		font-weight: 800;
-		color: #2B2B2D;
+		margin: 20px 0 0;
+		padding: 10px 0;
 	}
 	.signup-text {
 		font-family: 'Avenir W01', sans-serif;
@@ -389,7 +396,9 @@
 		cursor: pointer;
 	}
 	.SidebarListText a {
+		display: inline-block;
 		font-size: 14px;
+		margin-bottom: 5px;
 	}
 }
 

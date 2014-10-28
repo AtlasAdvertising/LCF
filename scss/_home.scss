@@ -29,6 +29,12 @@
 			top: 36%;
 		}
 	}
+	.title:before {
+    color: $blue;
+    content: "\f0a9";
+    font-family: 'FontAwesome';
+    margin-right: 15px;
+	}
 	.image img {
 		width: auto;
 		height: 400px;
@@ -89,8 +95,8 @@
 	}
 	a:hover {
 		.image {
-			background: #36AE9B;
-			border: 2px solid #36AE9B;
+			background: rgba(255,255,255,0.5);
+			border: 2px solid rgba(255,255,255,0.5);
 		}
 	}
 	.image {
@@ -171,19 +177,33 @@
 }
 
 
-// Web Parts 
+// Web Part Titles
 .webpart-title {
 	color: $dark-grey;
 	font-family: 'Bitter';
 	font-weight: 800;
 	font-size: 22px;
 	text-align: center;
+	&:before {
+		margin-right: 10px;
+		position: relative;
+		top: 10px;
+	}
 	@include breakpoint(small) {
 		text-align: left;
 		font-size: 28px;
 	}
 }
-
+.partners-wrapper {
+	.webpart-title:before {
+		content: url(/lcf/images/dev-partners.png);
+	}
+}
+.help-wrapper {
+	.webpart-title:before {
+		content: url(/lcf/images/how-can-we-help.png);
+	}
+}
 
 // Development Partners 
 .partner {
@@ -200,6 +220,9 @@
 			float: left;
 			width: 30%;
 		}
+		img {
+			max-width: 100%;
+		}
 	}
 	.summary {
 		margin-bottom: 5px;
@@ -211,6 +234,45 @@
 	}
 	a.link-text {
 		display: block;
+	}
+}
+
+// How Can We Help Form
+.contact-form-wrapper {
+	.checkboxes div, 
+	.checkboxes label {
+		display: inline-block;
+	}
+	.checkbox-wrapper {
+		width: 30%;
+	}
+	.needs {
+		margin-bottom: 15px;
+		width: 100%;
+		input {
+			width: 100%;
+		}
+	}
+	.name {
+    float: left;
+		margin-bottom: 15px;
+    margin-right: 1%;
+    width: 49%;
+    input {
+	    width: 100%;
+		}
+	}
+	.email {
+		float: left;
+		margin-bottom: 15px;
+		margin-left: 1%;
+		width: 49%;
+    input {
+	    width: 100%;
+		}
+	}
+	.FormButton {
+		width: 50%;
 	}
 }
 
@@ -275,19 +337,25 @@
 	.slick-prev {
 		left: 32%;
 		@include breakpoint(small) {
-			left: 40%;
+			left: 43%;
 		}
 		@include breakpoint(medium) {
-			left: 44%;
+			left: 44.5%;
+		}
+		@include breakpoint(large) {
+			left: 45.5%;
 		}
 	}
 	.slick-next {
 		right: 32%;
 		@include breakpoint(small) {
-			right: 40%;
+			right: 43%;
 		}
 		@include breakpoint(medium) {
-			right: 44%;
+			right: 44.5%;
+		}
+		@include breakpoint(large) {
+			right: 45.5%;
 		}
 	}
 	.slick-prev:before,
