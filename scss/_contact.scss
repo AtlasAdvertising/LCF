@@ -29,12 +29,18 @@
 	font-weight: 400;
 	margin: 10px 0 45px;	
 	.checkboxes {
-		font-size: 12px;
+		font-size: 11px;
 		margin: 0 0 10px;
+		@include breakpoint(large) {
+			font-size: 12px;
+		}
 		label {
-			margin-left: 5px;
+			margin-left: 2px;
 			position: relative;
 			top: -2px;
+			@include breakpoint(large) {
+				margin-left: 5px;
+			}
 		}
 	}
 }
@@ -59,7 +65,8 @@
 
 
 // Form validation styles
-#contactFormWrapper {
+#contactFormWrapper,
+.contact-form-wrapper {
 	.valid-input { 
 		border: solid 2px rgba(108, 190, 69, 0.8); 
 		outline: 0; 

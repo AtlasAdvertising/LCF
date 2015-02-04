@@ -1,17 +1,27 @@
 /* Home */
 
+// Section Wrappers
+#hero-wrapper,
+.open-content-wrapper,
+.map-wrapper,
+.webparts-wrapper,
+#footer-wrapper {
+	position: relative;
+	top: -95px;
+}
+
+
 // Hero Slider 
 #hero-wrapper {
-	max-height: 800px;
 	margin-bottom: 0;
+	max-height: 800px;
 	overflow: hidden;
-	position: relative;
 	z-index: 0;
 	.caption {
 		position: absolute;
-		top: 30%;
+		top: 65%;
 		background: rgba(255,255,255,0.85);
-		padding: 30px 50px;
+		padding: 18px 38px;
 		font-family: 'Bitter', serif;
 		font-size: 22px;
 		font-weight: 900;
@@ -19,14 +29,13 @@
 		@include breakpoint(small) {
 			font-size: 22px;
 			text-align: left;
-			top: 8%;
+			top: 76%;
 		}
 		@include breakpoint(medium) {
-			font-size: 28px;
-			top: 45%;
+			font-size: 24px;
+			top: 65%;
 		}
 		@media (min-width: 1500px) {
-			top: 35%;
 		}
 	}
 	.title:before {
@@ -58,25 +67,22 @@
 			width: 100%;
 		}
 	}
-	.slick-prev, 
-	.slick-next {
-		top: 30%;
-	}
-	button.slick-prev:before,
-	button.slick-next:before {
-		background: $black;
-		font-family: 'FontAwesome';
+	#hero-prev, 
+	#hero-next {
+		background: rgba(34,34,34,0.7);
+		border: none;
+		color: #fff;
 		font-size: 25px;
-		padding: 35px 20px;
+		height: 90px;
 		position: absolute;
+		top: 50%;
+		width: 60px;
 	}
-	button.slick-prev:before {
-		content: "\f053";
-		left: 30px;
-	}	
-	button.slick-next:before {
-		content: "\f054";
-		right: 30px;
+	#hero-prev {
+		left: 25px;
+	}
+	#hero-next {
+		right: 25px;
 	}
 }
 
@@ -165,13 +171,17 @@
 		}
 	}
 	.map-link {
-    padding: 50px 0 40px;
+    padding: 20px 0;
     text-align: center;
     @include breakpoint(small) {
-			width: 50%;
-			display: inline-block;
-			margin-top: -239px;
 			background: rgba(255,255,255,0.8);
+			bottom: 0;
+			display: inline-block;
+			position: absolute;
+			width: 50%;
+			&:nth-child(2) {
+				right: 0;
+			}
     }
     @include breakpoint(medium) {
     	opacity: 0;
@@ -258,7 +268,10 @@
 		display: inline-block;
 	}
 	.checkbox-wrapper {
-		width: 30%;
+		width: 100%;
+		@include breakpoint(medium) {
+			width: 32.5%;
+		}
 	}
 	.needs {
 		margin-bottom: 15px;

@@ -199,6 +199,7 @@
 	color: $grey;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+  margin-bottom: 95px;
 	padding: 0 0 50px;
 	blockquote {
 		border-left: 4px solid $blue;
@@ -251,7 +252,7 @@
 	.widget-title,
 	.twitter-wrapper h2,
 	.SidebarTitle {
-		border-top: 1px solid $grey;
+		border-top: 1px solid #ccc;
 		color: #2B2B2D;
 		font-size: 20px;
 		font-family: 'Bitter', serif;
